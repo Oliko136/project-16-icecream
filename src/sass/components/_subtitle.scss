@@ -1,0 +1,23 @@
+.section__subtitle{
+
+font-family:(--secondary-font);
+font-size: 18px;
+line-height: 1.17;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 15px;
+color: (--subtitle-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+
