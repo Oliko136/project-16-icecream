@@ -3,15 +3,14 @@
     min-width: 160px;
     height: 44px;
     border-radius: 22px;
-    color: (--accent-color);
-    background-color: (--primary-bg-color);
-    font-style: normal;
+    color: var(--accent-color);
+    background-color: var(--primary-bg-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     align-items: center;
     text-align: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -24,15 +23,13 @@
   min-width: 62.4px;
   height: 24px;
   border-radius: 20px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   align-items: center;
   text-align: center;
-  color: (--secondary-text-color);
-  background-color: (--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -50,14 +47,12 @@
   min-width: 82.8px;
   height: 24px;
   border-radius: 20px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   align-items: center;
   text-align: center;
-  color: (--accent-color);
-  background-color: (--primary-bg-color);
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -76,15 +71,14 @@
   min-width: 176px;
   height: 44px;
   border-radius: 22px;
-  color: (--accent-color);
-  background-color: (--primary-bg-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   align-items: center;
   text-align: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -96,15 +90,14 @@
 .contacts-button__first {
   min-width: 161px;
   height: 44px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   align-items: center;
   text-align: center;
-  color: (--secondary-text-color);
-  background-color: (--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -124,15 +117,14 @@
 .contacts-button__second {
   min-width: 161px;
   height: 44px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   align-items: center;
   text-align: center;
-  color: (--accent-color);
-  background-color: (--primary-bg-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
