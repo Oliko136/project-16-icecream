@@ -1,0 +1,56 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+
+  background-color: var(--secondary-bg-color);
+  background-image: url(./../images/mobile/tradition-and-love-bg@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0 bottom 76px;
+}
+
+.about__section-subtitle {
+  @extend .section__subtitle;
+
+  font-family: var(--secondary-font);
+  color: var(--subtitle-color);
+}
+
+.about__section-title {
+  @extend .section-title;
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 46px;
+}
+
+.about__text {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.about__text-first {
+  color: var(--primary-text-color);
+
+  margin-bottom: 38px;
+}
+
+.about__text-second {
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 16px;
+}
+
+.about__text-third {
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 25px;
+}
