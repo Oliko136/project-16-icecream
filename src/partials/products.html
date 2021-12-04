@@ -1,5 +1,5 @@
  <section class="products" id="products">
-    <div class="container prodacts__container">
+    <div class="container products__container">
       <p class="section__subtitle">100% natural
       </p>
        
@@ -10,28 +10,11 @@
  <!-- Первая картинка списка -->
           <li class="products__item products__item-icecream">
               
-            <!-- Картинка мороженого  -->
-            <picture>
-              <source
-                srcset="
-                  ./src/images/mobile/ice-cream-pic@1x.png  1x,
-                  ./src/images/mobile/ice-cream-pic@2x.png  2x
-                  media=(max-width:767px)">
-        
-                <source
-                srcset="
-                  ./src/images/tablet/ice-cream-pic@1x.png  1x,
-                  ./src/images/tablet/ice-cream-pic@2x.png  2x
-                  media=(min-width:768px)" >
-
-                <source
-                srcset="
-                  ./src/images/decktop/ice-cream-pic@1x.png 1x,
-                  ./src/images/decktop/ice-cream-pic@2x.png 2x
-                  media=(min-width:1200px)" >
-
-                <img src="./src/images/mobile/ice-cream-pic@1x.png" alt="ice cream" class="products_image">
-            </picture>
+           <h3 class="products__picture products__picture-icecream">
+             ::before
+             "ice-cream"
+             ::after
+           </h3>
 
             <!-- Надпись после картинки и кружочки после надписи-->
             <div class="products__link">
@@ -62,9 +45,9 @@
 
               <!-- Стрелка вправо -->
 
-              <button type="button" class="prodacts__button" data-modal-icecream-open>
+              <button type="button" class="products__button" data-modal-icecream-open>
                 <svg class="products__icon" width="20" height=20">
-                  <use href="./src/images/sprite_icons.svg#icon-arrow-right"></use>
+                  <use href="./images/sprite_icons.svg#icon-arrow-right"></use>
                 </svg>
               </button>
                 </div>
@@ -73,32 +56,11 @@
 <!--Вторая карточка списка  -->
                     <li class="products__item products__item-icecoffe">
 
-                  <!-- Картинка второй карточки -->
-                    <picture>
-                    <source
-                  srcset="
-                 ./src/images/mobile/ice-coffe-pic@1x.png  1x,
-                  ./src/images/mobile/ice-coffe-pic@2x.png  2x,
-                 
-                  media=(max-width:767px)">
-        
-                <source
-                srcset="
-                  ./src/images/tablet/ice-coffe-pic@1x.png  1x,
-                  ./src/images/tablet/ice-coffe-pic@2x.png  2x,
-                 
-                  media=(min-width:768px)" >
-
-                <source
-                srcset="
-                  ./src/images/decktop/ice-coffe-pic@1x.png 1x,
-                  ./src/images/decktop/ice-coffe-pic@2x.png 2x,
-                  
-                  media=(min-width:1200px)" >
-
-                <img src="./src/images/mobile/ice-coffe-pic@1x.png " alt="ice cream" class="products_image">
-           </picture>
-
+                      <h3 class="products__picture products__picture-icecream">
+                        ::before
+                        "ice-coffe"
+                        ::after
+                      </h3>
        <!-- Надпись после картинки и кружочки после надписи-->
 
           <div class="products__link">
@@ -117,9 +79,9 @@
 
       <!-- Стрелка вправо -->
 
-      <button type="button" class="prodacts__button" data-modal-icecoffe-open>
+      <button type="button" class="products__button" data-modal-icecoffe-open>
         <svg class="products__icon" width="20" height="20">
-          <use href="./src/images/sprite_icons.svg#icon-arrow-right"></use>
+          <use href="./images/sprite_icons.svg#icon-arrow-right"></use>
         </svg>
       </button>
       </div>
@@ -131,30 +93,11 @@
    <li class="products__item products__item-milkshake">
 
     <!-- Картинка третьей карточки -->
-    <picture>
-        <source
-      srcset="
-     ./src/images/mobile/milkshakes-pic@1x.png  1x,
-      ./src/images/mobile/milkshakes-pic@2x.png  2x,
-     
-      media=(max-width:767px)">
-
-    <source
-    srcset="
-      ./src/images/tablet/milkshakes-pic@1x.png  1x,
-      ./src/images/tablet/milkshakes-pic@2x.png  2x,
-     
-      media=(min-width:768px)" >
-
-    <source
-    srcset="
-      ./src/images/decktop/milkshakes-pic@1x.png 1x,
-      ./src/images/decktop/milkshakes-pic@2x.png 2x,
-      
-      media=(min-width:1200px)" >
-
-    <img src="./src/images/mobile/milkshakes-pic@1x.png " alt="ice cream" class="products_image">
-</picture>
+    <h3 class="products__picture products__picture-icecream">
+      ::before
+      "milkshakes"
+      ::after
+    </h3>
 
 <!-- Надпись после картинки и кружочки после надписи-->
 
@@ -174,9 +117,9 @@ incididunt ut labore et
 
 <!-- Стрелка вправо -->
 
-<button type="button" class="prodacts__button" data-modal-icecoffe-open>
+<button type="button" class="products__button" data-modal-icecoffe-open>
 <svg class="products__icon" width="20" height="20">
-<use href="./src/images/sprite_icons.svg#icon-arrow-right"></use>
+<use href="./images/sprite_icons.svg#icon-arrow-right"></use>
 </svg>
 </button>
 </li>
@@ -192,7 +135,7 @@ incididunt ut labore et
     <div class="modal">
       <button type="button" class="modal__btn-close" data-modal-close>
         <svg class="modal__icon-close" width="18" height="18">
-          <use href="./src/images/sprite_icons.svg#close"></use>
+          <use href="./images/sprite_icons.svg#close"></use>
         </svg>
       </button>
       <p class="modal__text">"Два шарика клубничного мороженого с нотками 
@@ -208,7 +151,7 @@ incididunt ut labore et
            <div class="modal">
             <button type="button" class="modal__btn-close" data-modal-close>
               <svg class="modal__icon-close" width="18" height="18">
-                <use href="./src/images/sprite_icons.svg#close"></use>
+                <use href="./images/sprite_icons.svg#close"></use>
               </svg>
             </button>
             <p class="modal__text">"Два шарика клубничного мороженого с нотками 
@@ -224,7 +167,7 @@ incididunt ut labore et
                     <div class="modal">
                       <button type="button" class="modal__btn-close" data-modal-close>
                         <svg class="modal__icon-close" width="18" height="18">
-                          <use href="./src/images/sprite_icons.svg#close"></use>
+                          <use href="./images/sprite_icons.svg#close"></use>
                         </svg>
                       </button>
                       <p class="modal__text">"Свежесваренный кофе высшего качества
@@ -241,7 +184,7 @@ incididunt ut labore et
                            <div class="modal">
                             <button type="button" class="modal__btn-close" data-modal-close>
                               <svg class="modal__icon-close" width="18" height="18">
-                                <use href="./src/images/sprite_icons.svg#close"></use>
+                                <use href="./images/sprite_icons.svg#close"></use>
                               </svg>
                             </button>
                             <p class="modal__text">"Молочный коктейль с вкуснейшим ванильным мороженым
