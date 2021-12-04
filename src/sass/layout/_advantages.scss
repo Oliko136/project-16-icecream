@@ -1,0 +1,130 @@
+.advantages {
+  background-color: var(--secondary-bg-color);
+}
+
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 66px;
+
+  @media screen and (max-width: $tablet) {
+    max-width: 230px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 86px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 90px;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
+.advantages__heading {
+  margin-bottom: 13px;
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+    font-size: 58px;
+  }
+}
+
+.advantages__heading--bucket::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 33px;
+  height: 50px;
+
+  background-image: url('../images/mobile/icon-bucket@1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/icon-bucket@2x.png');
+  }
+}
+
+.advantages__heading--apples::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
+
+  background-image: url('../images/mobile/icon-apples@1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/icon-apples@2x.png');
+  }
+}
+
+.advantages__heading--heart::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 44px;
+  height: 50px;
+
+  background-image: url('../images/mobile/icon-heart@1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/icon-heart@2x.png');
+  }
+}
+
+.advantages__text {
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
