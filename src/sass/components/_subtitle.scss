@@ -1,11 +1,11 @@
 .section__subtitle{
 
-font-family:(--secondary-font);
+font-family:var(--secondary-font);
 font-size: 18px;
 line-height: 1.17;
 text-align: center;
 text-transform: uppercase;
-color: (--subtitle-color);
+color: var(--subtitle-color);
 
   @media screen and (min-width: $tablet) {
     font-size: 26px;
