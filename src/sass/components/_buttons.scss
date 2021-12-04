@@ -8,6 +8,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+    align-items: center;
+    text-align: center;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,6 +26,8 @@
   font-size: 14px;
   line-height: 1.28;
   border: none;
+  align-items: center;
+  text-align: center;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,6 +49,8 @@
   border-radius: 20px;
   font-size: 14px;
   line-height: 1.28;
+  align-items: center;
+  text-align: center;
   border: none;
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
@@ -69,6 +75,8 @@
   font-size: 16px;
   line-height: 1.31;
   border: none;
+  align-items: center;
+  text-align: center;
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,6 +93,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  align-items: center;
+  text-align: center;
   border: none;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
