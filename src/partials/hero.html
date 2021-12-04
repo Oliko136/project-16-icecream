@@ -2,28 +2,28 @@
   <div class="container">
     <header class="header">
       <nav class="header__navigation">
-        <a class="logo logo--header link" href="/">ICECREAM</a>
+        <a class="logo logo--header" href="/">ICECREAM</a>
 
-        <ul class="header__list list">
+        <ul class="header__list">
           <li class="header__item">
-            <a class="header__link link current" href="">Home</a>
+            <a class="header__link current" href="">Home</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" href="">About us</a>
+            <a class="header__link" href="">About us</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" href="">How it’s made?</a>
+            <a class="header__link" href="">How it’s made?</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" href="">Our products</a>
+            <a class="header__link" href="">Our products</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" href="">Contact</a>
+            <a class="header__link" href="">Contact</a>
           </li>
         </ul>
       </nav>
 
-      <button class="burger__button" data-menu-open>
+      <button class="burger__button" type="button" data-menu-open>
         <svg class="burger--svg" width="20" height="12">
           <use href=""></use>
         </svg>
@@ -32,44 +32,46 @@
       <button class="header__button cursor" type="button">Buy now</button>
     </header>
 
-    <div>
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <button class="hero-button cursor" type="button">Products</button>
-      <button class="hero-button cursor" type="button">How it’s made?</button>
+    <div class="hero__title--position">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--accent">passion</span>
+      </h1>
+      <a class="hero__link--product" href="">Products</a>
+      <a class="hero__link--manufacture" href="">How it’s made?</a>
     </div>
 
-    <div>
-      <p>
+    <div class="hero__text--position">
+      <p class="hero__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <a href="">
-        <svg class="" width="" height="">
+      <a class="hero__text--link" href="">
+        <svg class="hero__text--svg" width="" height="">
           <use href=""></use>
         </svg>
       </a>
     </div>
 
-    <div>
+    <div class="hero__picture--left">
       <picture></picture>
     </div>
 
-    <div>
-      <ul>
-        <li>16</li>
-        <li>cafes</li>
-      </ul>
-      <ul>
-        <li>23</li>
-        <li>food trucks</li>
-      </ul>
-    </div>
+    <ul class="representatives__list">
+      <li class="representatives--item">
+        <p class="representatives--number">16</p>
+        <p class="representatives--text">cafes</p>
+      </li>
+      <li class="representatives--item">
+        <p class="representatives--number">23</p>
+        <p class="representatives--text">food trucks</p>
+      </li>
+    </ul>
 
-    <div>
+    <div class="hero__picture">
       <picture></picture>
     </div>
 
-    <div>
+    <div class="hero__picture--right">
       <picture></picture>
     </div>
   </div>
