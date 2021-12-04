@@ -1,0 +1,138 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+
+  background-color: var(--secondary-bg-color);
+  background-image: url(./../images/mobile/tradition-and-love-bg@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0 bottom 76px;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(./../images/mobile/tradition-and-love-bg@2x.png);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 125px;
+    padding-bottom: 55px;
+    background-image: url(./../images/desktop/tradition-and-love-bg@1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/desktop/tradition-and-love-bg@2x.png);
+    }
+  }
+}
+
+.about__section-subtitle {
+  @extend .section__subtitle;
+
+  font-family: var(--secondary-font);
+  color: var(--subtitle-color);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+
+.about__section-title {
+  @extend .section-title;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.about__content {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 46px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 516px;
+  }
+}
+
+.about__text {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 17px;
+    padding-right: 0;
+    padding-top: 50px;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-left: 74px;
+
+    padding-top: 51px;
+
+    font-size: 16px;
+  }
+}
+
+.about__text-first {
+  color: var(--primary-text-color);
+
+  margin-bottom: 38px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.about__text-second {
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 44px;
+  }
+}
+
+.about__text-third {
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 45px;
+  }
+}
