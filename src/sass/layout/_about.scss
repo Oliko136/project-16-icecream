@@ -17,6 +17,18 @@
     padding-bottom: 66px;
     background-image: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 125px;
+    padding-bottom: 55px;
+    background-image: url(./../images/desktop/tradition-and-love-bg@1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/desktop/tradition-and-love-bg@2x.png);
+    }
+  }
 }
 
 .about__section-subtitle {
@@ -28,6 +40,10 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
 }
 
 .about__section-title {
@@ -35,6 +51,9 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 55px;
   }
 }
 
@@ -52,6 +71,9 @@
 
   @media screen and (min-width: $tablet) {
     min-width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 516px;
   }
 }
 
@@ -72,18 +94,33 @@
     font-size: 14px;
     line-height: 1.7;
   }
+  @media screen and (min-width: $tablet) {
+    padding-left: 74px;
+
+    padding-top: 51px;
+
+    font-size: 16px;
+  }
 }
 
 .about__text-first {
   color: var(--primary-text-color);
 
   margin-bottom: 38px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
+  }
 }
 
 .about__text-second {
   color: var(--tertiary-text-color);
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 44px;
+  }
 }
 
 .about__text-third {
@@ -93,5 +130,9 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 45px;
   }
 }
