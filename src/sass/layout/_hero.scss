@@ -1,3 +1,56 @@
 .hero {
-  background-color: #e17992;
+  background-color: var(--tertiary-bg-color);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 6px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+
+.header__list {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  display: flex;
+}
+
+.header__button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.burger__button {
+  @media screen and (min-width: 768px) {
+    margin-left: 291px;
+    margin-right: 30px;
+  }
+
+  width: 20px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 199px;
+  height: 50px;
+  display: block;
 }
