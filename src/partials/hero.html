@@ -1,0 +1,142 @@
+<section class="hero">
+  <div class="container">
+    <header class="header">
+      <nav class="header__navigation">
+        <a class="logo logo--header" href="/">
+          <picture>
+            <source
+              media="(min-width:1280px )"
+              srcset="./images/mobile/logo@1x.png 1x, ./images/mobile/logo@2x.png 2x"
+            />
+            <source
+              media="(min-width:768px )"
+              srcset="./images/mobile/logo@1x.png 1x, ./images/mobile/logo@2x.png 2x"
+            />
+            <source
+              media="(min-width:480px )"
+              srcset="./images/mobile/logo@1x.png 1x, ./images/mobile/logo@2x.png 2x"
+            />
+            <img src="./images/mobile/logo@1x.png" alt="" />
+          </picture>
+        </a>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link current" href="">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">About us</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">How it’s made?</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Our products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="burger__button" type="button" data-menu-open>
+        <svg class="burger--svg" width="20" height="12">
+          <use href="./images/sprite_icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+
+      <button class="header__button cursor" type="button">Buy now</button>
+    </header>
+
+    <div class="hero__title--position">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--accent">passion</span>
+      </h1>
+      <a class="hero__link--product" href="">Products</a>
+      <a class="hero__link--manufacture" href="">How it’s made?</a>
+    </div>
+
+    <div class="hero__text--position">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="hero__text--link" href="">
+        <svg class="hero__text--svg" width="7" height="7">
+          <use href="./images/sprite_icons.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero__picture--left">
+      <picture>
+        <source
+          media="(min-width:1280px )"
+          srcset="
+            ./images/desktop/slider-milk-pic@1x.png 1x,
+            ./images/desktop/slider-milk-pic@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./images/tablet/slider-milk-pic@1x.png 1x,
+            ./images/tablet/slider-milk-pic@2x.png 2x
+          "
+        />
+
+        <img src="./images/tablet/slider-milk-pic@1x.png" alt="" />
+      </picture>
+    </div>
+
+    <ul class="representatives__list">
+      <li class="representatives__item">
+        <p class="representatives__number">16</p>
+        <p class="representatives__text">cafes</p>
+      </li>
+      <li class="representatives__item">
+        <p class="representatives__number">23</p>
+        <p class="representatives__text">food trucks</p>
+      </li>
+    </ul>
+
+    <div class="hero__picture">
+      <picture>
+        <source
+          media="(min-width:1280px )"
+          srcset="./images/desktop/slider-pic@1x.png 1x, ./images/desktop/slider-pic@2x.png 2x"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="./images/tablet/slider-pic@1x.png 1x, ./images/tablet/slider-pic@2x.png 2x"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="./images/mobile/slider-pic@1x.png 1x, ./images/mobile/slider-pic@2x.png 2x"
+        />
+        <img src="./images/mobile/slider-pic@1x.png" alt="" />
+      </picture>
+    </div>
+
+    <div class="hero__picture--right">
+      <picture>
+        <source
+          media="(min-width:1280px )"
+          srcset="
+            ./images/desktop/slider-girl-pic@1x.png 1x,
+            ./images/desktop/slider-girl-pic@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./images/tablet/slider-girl-pic@1x.png 1x,
+            ./images/tablet/slider-girl-pic@2x.png 2x
+          "
+        />
+
+        <img src="./images/tablet/slider-girl-pic@1x.png" alt="" />
+      </picture>
+    </div>
+  </div>
+</section>
