@@ -1,0 +1,136 @@
+.header__button {
+  @media screen and (min-width: $tablet) {
+    min-width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    color: var(--accent-color);
+    background-color: var(--primary-bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+.hero__link--product {
+  min-width: 62.4px;
+  height: 24px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 104px;
+    height: 40px;
+  }
+}
+
+.hero__link--manufacture {
+  min-width: 82.8px;
+  height: 24px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 138px;
+    height: 40px;
+  }
+}
+
+.about__btn {
+  min-width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.contacts-button__first {
+  min-width: 161px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 191px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 198px;
+  }
+}
+
+.contacts-button__second {
+  min-width: 161px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 174px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 180px;
+  }
+}
