@@ -10,10 +10,15 @@
   transition: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 }
 .mobile-menu__close-btn {
-  border: none;
+  //   border: none;
   position: absolute;
   top: 23px;
   right: 28px;
+}
+
+.mobile-menu__close-btn--icon {
+  stroke-linejoin: round;
+  fill: var(--accent-color);
 }
 
 .mobile-menu__button {
