@@ -91,6 +91,19 @@
 }
 
 .container--relative {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
   position: relative;
 }
 
