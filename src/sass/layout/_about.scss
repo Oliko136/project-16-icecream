@@ -74,6 +74,7 @@
   }
   @media screen and (min-width: $desktop) {
     min-width: 516px;
+    margin-left: 92px;
   }
 }
 
@@ -97,7 +98,7 @@
     line-height: 1.7;
   }
   @media screen and (min-width: $desktop) {
-    min-width: 463px;
+    width: 463px;
     padding-left: 74px;
 
     padding-top: 51px;
