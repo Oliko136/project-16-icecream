@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 655px;
+    height: 665px;
   }
 }
 
@@ -80,6 +80,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 4;
 }
 
 .header__navigation {
@@ -100,14 +102,13 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
     top: 0px;
-    left: 46px;
+    left: -69px;
   }
 }
 
 .hero__title {
   font-family: var(--secondary-font);
 
-  font-weight: normal;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -133,12 +134,11 @@
 
   font-family: var(--secondary-font);
 
-  font-weight: normal;
   font-size: 48px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--title-color);
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
@@ -151,7 +151,7 @@
 
 .hero__title--position {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   margin-top: 137px;
 
@@ -191,7 +191,6 @@
 
     font-family: var(--primary-font);
     font-style: normal;
-    font-weight: normal;
     font-size: 8px;
     line-height: 150%;
     color: var(--secondary-text-color);
@@ -243,7 +242,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: -17px;
+    bottom: -16px;
     left: 77px;
   }
 }
@@ -260,16 +259,51 @@
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: -51px;
+    bottom: -61px;
     right: 109px;
+  }
+
+  z-index: 3;
+}
+
+//        Hero-picture
+
+.picture__background {
+  position: relative;
+}
+
+.picture__background::before {
+  content: '';
+  display: inline-block;
+  width: 345px;
+  height: 345px;
+  background-color: var(--subtitle-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  left: -81px;
+  top: -9px;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: -32px;
+    left: -71px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: -56px;
+    left: -119px;
   }
 }
 
 .hero__picture {
   position: absolute;
   right: 32px;
-  top: 86px;
-  z-index: 0;
+  top: 85px;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     right: 247px;
@@ -278,7 +312,7 @@
 
   @media screen and (min-width: 1280px) {
     right: 450px;
-    top: 60px;
+    top: 70px;
   }
 }
 
@@ -302,7 +336,6 @@
 
 .representatives__number {
   font-family: var(--secondary-font);
-  font-weight: normal;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.04em;
@@ -317,7 +350,6 @@
 
 .representatives__text {
   font-family: var(--primary-font);
-  font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
 
