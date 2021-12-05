@@ -5,10 +5,12 @@
   left: 0;
   width: 250px;
   height: 100vh;
-  padding: 21px 20px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  padding-top: 60px;
+  padding-left: 21px;
+  padding-right: 20px;
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--mobile-menu-color);
@@ -28,7 +30,7 @@
 .mobile-menu__button {
   min-width: 209px;
   height: 44px;
-  margin-top: 60px;
+
   cursor: pointer;
   border-radius: 22px;
   border: none;
@@ -55,7 +57,6 @@
   //   border: 1px solid #e18298;
 }
 .mobile-menu__text {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
