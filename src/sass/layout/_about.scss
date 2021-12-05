@@ -6,7 +6,7 @@
   background-image: url(./../images/mobile/tradition-and-love-bg@1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right 0 bottom 76px;
+  background-position: right 0 bottom 115px;
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(./../images/mobile/tradition-and-love-bg@2x.png);
@@ -20,8 +20,9 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: 125px;
-    padding-bottom: 55px;
+    padding-bottom: 39px;
     background-image: url(./../images/desktop/tradition-and-love-bg@1x.png);
+    background-position: right 0 bottom 29px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -33,9 +34,7 @@
 
 .about__section-subtitle {
   @extend .section__subtitle;
-
-  font-family: var(--secondary-font);
-  color: var(--subtitle-color);
+  margin-bottom: 15px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
@@ -48,6 +47,7 @@
 
 .about__section-title {
   @extend .section-title;
+  margin-bottom: 26px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 50px;
@@ -83,10 +83,12 @@
   font-size: 12px;
   line-height: 1.6;
 
+  min-width: 220px;
   padding-right: 30px;
   padding-left: 30px;
 
   @media screen and (min-width: $tablet) {
+    min-width: 340px;
     padding-left: 17px;
     padding-right: 0;
     padding-top: 50px;
@@ -94,12 +96,13 @@
     font-size: 14px;
     line-height: 1.7;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    min-width: 463px;
     padding-left: 74px;
 
     padding-top: 51px;
 
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -119,7 +122,7 @@
   margin-bottom: 16px;
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 }
 
