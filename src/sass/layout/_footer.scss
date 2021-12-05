@@ -1,6 +1,5 @@
 .footer{
     background-color: var(--secondary-bg-color);
-    margin-bottom: 10px;
 }
 .footer-main{
     display: flex;
@@ -43,6 +42,9 @@
         border-radius: 50%;
         fill: var(--secondary-text-color);
         background: var(--social-bg-color);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus{
             background: var(--title-color);
@@ -52,7 +54,7 @@
 .footer-contacts{
 
     font-family: var(--primary-font);
-    font-weight: bold;
+    font-weight: 700px;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -69,7 +71,7 @@
     justify-content: center;
     padding: 9px 0 10px;
     font-family: var(--primary-font);
-    font-weight: bold;
+    font-weight: 700px;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
