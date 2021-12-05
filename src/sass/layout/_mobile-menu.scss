@@ -6,6 +6,11 @@
   width: 250px;
   height: 100vh;
   padding: 21px 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--mobile-menu-color);
 }
 .mobile-menu__close-btn {
@@ -14,7 +19,6 @@
   position: absolute;
   top: 23px;
   right: 28px;
-  stroke-linejoin: round;
 }
 
 .mobile-menu__close-btn--icon {
