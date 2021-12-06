@@ -24,7 +24,6 @@
 .header--svg {
   width: 10px;
   height: 10px;
-
   margin-left: 8px;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -65,8 +64,6 @@
 }
 
 .hero__link--manufacture {
-  // min-width: 82.8px;
-  // height: 24px;
   border-radius: 26px;
   padding-left: 15px;
   padding-right: 15px;
