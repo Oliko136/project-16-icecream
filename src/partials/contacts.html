@@ -14,14 +14,14 @@
         <p class="contacts__date">Saturday - Sunday</p>
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
         <div class="contacts__line"></div>
-        <address class="contacts__adress">
-          <a href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
-          <a href="malito:noreply@envato.com">noreply@envato.com</a>
+        <address class="contacts__address">
+          <a class="contacts__address--tel" href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
+          <a class="contacts__address--mail" href="malito:noreply@envato.com">noreply@envato.com</a>
         </address>
       </li>
 
       <li class="contacts__item">
-        <p class="contacts-text-pre__title">FOOD TRUCK</p>
+        <p class="contacts-text-pre__title contacts__foodtruck">FOOD TRUCK</p>
         <h3 class="contacts__title">Los Angeles</h3>
         <p class="contacts-text-after__title">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -32,9 +32,9 @@
         <p class="contacts__date">Saturday - Sunday</p>
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
         <div class="contacts__line"></div>
-        <address class="contacts__adress">
-          <a href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
-          <a href="malito:noreply@envato.com">noreply@envato.com</a>
+        <address class="contacts__address">
+          <a class="contacts__address--tel" href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
+          <a class="contacts__address--mail" href="malito:noreply@envato.com">noreply@envato.com</a>
         </address>
       </li>
 
@@ -50,15 +50,29 @@
         <p class="contacts__date">Saturday - Sunday</p>
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
         <div class="contacts__line"></div>
-        <address class="contacts__adress">
-          <a href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
-          <a href="malito:noreply@envato.com">noreply@envato.com</a>
+        <address class="contacts__address">
+          <a class="contacts__address--tel" href="tel:+61(0)383766284">+61(0) 383 766 284 </a>
+          <a class="contacts__address--mail" href="malito:noreply@envato.com">noreply@envato.com</a>
         </address>
       </li>
     </ul>
     <ul class="contacts__button btn">
-      <li class="contacts-button__first"><button type="button">Our Locations</button></li>
-      <li class="contacts-button__second"><button type="button">Franchise</button></li>
+      <li>
+        <button class="contacts-button__first" type="button">
+          Our Locations
+          <svg class="contacts-button-icon__light">
+            <use href="/images/sprite_icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button class="contacts-button__second" type="button">
+          Franchise
+          <svg class="contacts-button-icon__dark">
+            <use href="/images/sprite_icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
     </ul>
   </div>
 </section>
