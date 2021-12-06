@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and ($mobile) {
+  @media screen and (min-width: $mobile) {
     width: $mobile;
   }
 
