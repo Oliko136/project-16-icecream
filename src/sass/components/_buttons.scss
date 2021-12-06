@@ -37,8 +37,8 @@
 
 .hero__link--product {
   border-radius: 26px;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 8px;
+  line-height: 1.25;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 9px;
@@ -60,17 +60,19 @@
     padding-right: 24px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
 .hero__link--manufacture {
   border-radius: 26px;
+  font-size: 8px;
+  line-height: 1.25;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 9px;
   padding-bottom: 9px;
-  font-size: 14px;
-  line-height: 1.28;
   align-items: center;
   text-align: center;
   border: none;
@@ -88,6 +90,8 @@
     padding-right: 24px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
