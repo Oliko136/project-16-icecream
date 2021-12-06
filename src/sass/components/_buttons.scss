@@ -22,11 +22,8 @@
 }
 
 .header--svg {
-<<<<<<< Updated upstream
-=======
   width: 10px;
   height: 10px;
->>>>>>> Stashed changes
   margin-left: 8px;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -40,8 +37,8 @@
 
 .hero__link--product {
   border-radius: 26px;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 8px;
+  line-height: 1.25;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 9px;
@@ -63,19 +60,19 @@
     padding-right: 24px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
 .hero__link--manufacture {
-  // min-width: 82.8px;
-  // height: 24px;
   border-radius: 26px;
+  font-size: 8px;
+  line-height: 1.25;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 9px;
   padding-bottom: 9px;
-  font-size: 14px;
-  line-height: 1.28;
   align-items: center;
   text-align: center;
   border: none;
@@ -93,6 +90,8 @@
     padding-right: 24px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 
