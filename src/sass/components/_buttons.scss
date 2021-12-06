@@ -21,9 +21,12 @@
   }
 }
 
-.burger--svg {
+.header--svg {
+<<<<<<< Updated upstream
+=======
   width: 10px;
   height: 10px;
+>>>>>>> Stashed changes
   margin-left: 8px;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -36,8 +39,6 @@
 }
 
 .hero__link--product {
-  // min-width: 62.4px;
-  // height: 24px;
   border-radius: 26px;
   font-size: 14px;
   line-height: 1.28;
