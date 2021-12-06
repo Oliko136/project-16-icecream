@@ -1,8 +1,6 @@
 .contacts {
   padding-bottom: 80px;
-  // background-color: var(--secondary-bg-color);
-  // background-image: linear-gradient(var(--secondary-bg-color)),
-  //   url(../images/desktop/contacts-bg@2x.png);
+  background-color: var(--secondary-bg-color);
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     padding-bottom: 158px;
