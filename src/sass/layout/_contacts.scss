@@ -1,6 +1,8 @@
 .contacts {
   padding-bottom: 80px;
-  background-color: var(--secondary-bg-color);
+  // background-color: var(--secondary-bg-color);
+  // background-image: linear-gradient(var(--secondary-bg-color)),
+  //   url(../images/desktop/contacts-bg@2x.png);
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     padding-bottom: 158px;
@@ -56,8 +58,6 @@
 
     margin-left: 0;
     margin-right: 0;
-    margin-top: -78px;
-
     margin-bottom: 0;
   }
 
@@ -68,9 +68,9 @@
     padding-top: 51px;
     padding-bottom: 62px;
 
-    margin-top: -102px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0;
   }
 }
 
