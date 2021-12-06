@@ -1,5 +1,14 @@
 .advantages {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 97px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 140px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 139px;
+  }
 }
 
 .advantages__list {
