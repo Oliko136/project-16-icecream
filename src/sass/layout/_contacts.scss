@@ -12,9 +12,11 @@
 }
 
 .contacts__card {
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 54px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 54px;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     display: flex;
