@@ -1,3 +1,12 @@
+.contacts__container {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-color: linear-gradient (#fff5f6 15%, transparent 0);
+  }
+}
+
 .contacts {
   padding-bottom: 80px;
   background-color: var(--secondary-bg-color);
