@@ -90,18 +90,22 @@
 
   @media screen and (min-width: $tablet) {
     min-width: 340px;
-    padding-left: 17px;
+    margin-left: 17px;
+    padding-left: 0;
     padding-right: 0;
-    padding-top: 50px;
+    margin-top: 50px;
+    padding-top: 0;
 
     font-size: 14px;
     line-height: 1.7;
   }
   @media screen and (min-width: $desktop) {
     width: 463px;
-    padding-left: 74px;
+    margin-left: 74px;
+    padding-left: 0;
 
-    padding-top: 51px;
+    margin-top: 51px;
+    padding-top: 0;
 
     font-size: 14px;
   }
