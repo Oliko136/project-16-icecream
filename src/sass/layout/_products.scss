@@ -67,17 +67,22 @@
     
       
     .products__item {
+      width: 280px;
+      height: 485px;
       padding: 0 40px;
       margin-bottom: 130px;
       border-radius: 24px;
-      height: 485px;
+     
+      
        
   
       @media screen and(min-width:$tablet) {
+        width: 220px;
         margin: 10px;
         padding: 0 11px;
       }
       @media screen and(min-width:$desktop) {
+        width: 329px;
         height: 525px;
         margin: 15px;
         padding: 0 44px;
@@ -316,7 +321,7 @@
         &:hover,
          &:focus{
             cursor: pointer;
-            background-color:var(--title-color);
+            background-color:var(--accent-color);
          
     
         }
