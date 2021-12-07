@@ -13,8 +13,7 @@
   visibility: hidden;
   pointer-events: none;
   transform: translateX(150%);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--mobile-menu-color);
 
   @media screen and (min-width: $tablet) {
@@ -74,7 +73,7 @@
   margin-bottom: 22px;
   padding-top: 13px;
   padding-bottom: 11px;
-  border: 1px solid #e18298;
+  //   border: 1px solid #e18298;
 }
 .mobile-menu__text {
   font-weight: 700;
