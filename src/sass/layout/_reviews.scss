@@ -29,11 +29,49 @@
   align-items: center;
 }
 
+.swiper-slide::before {
+  content: '“';
+  transform: rotate(180deg);
+  font-size: 100px;
+  color: #e6e9ec;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 900;
+  line-height: 1;
+  display: block;
+  height: 0.6em;
+  position: absolute;
+  @media screen and (min-width: $tablet) {
+    top: 33%;
+    left: 16.1%;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 32%;
+    left: 15.1%;
+  }
+  top: 22%;
+  left: 34.1%;
+  z-index: 1;
+}
+
 .swiper-slide img {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.reviews__window {
+  @media screen and (min-width: $tablet) {
+    width: 620px;
+    height: 382px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 926px;
+    height: 350px;
+  }
+  width: 280px;
+  height: 541px;
+  position: relative;
 }
 
 .swiper-pagination-bullet-active {
@@ -57,13 +95,14 @@
   font-weight: 500;
   text-align: center;
   background: #fafafa;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     padding: 47px 80px 34px 80px;
     font-size: 14px;
     line-height: 2.16;
   }
-  @media screen and (min-width: 1280px) {
-    padding: 47px 89px 39px 87px;
+  @media screen and (min-width: $desktop) {
+    padding: 32px 54px 32px 50px;
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.04em;
@@ -95,7 +134,23 @@
 }
 
 .reviews__title {
-  margin-bottom: 35px;
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    margin-bottom: 35px;
+  }
+
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 16px;  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
 }
