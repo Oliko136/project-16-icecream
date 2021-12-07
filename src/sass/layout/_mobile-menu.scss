@@ -6,8 +6,8 @@
   width: 250px;
   height: 100vh;
   padding-top: 60px;
-  padding-left: 21px;
-  padding-right: 20px;
+  // padding-left: 21px;
+  // padding-right: 20px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -37,7 +37,6 @@
 .mobile-menu__button {
   min-width: 209px;
   height: 44px;
-
   cursor: pointer;
   border-radius: 22px;
   border: none;
@@ -61,13 +60,19 @@
   margin-bottom: 22px;
   padding-top: 13px;
   padding-bottom: 11px;
-  //   border: 1px solid #e18298;
 }
+
+.mobile-menu__item:nth-child(2n + 1) {
+  border: 1px solid #e18298;
+}
+
 .mobile-menu__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
   align-items: center;
+  padding-left: 21px;
+  padding-right: 20px;
 
   color: var(--secondary-text-color);
 }
