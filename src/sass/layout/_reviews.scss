@@ -1,7 +1,11 @@
 .reviews {
-}
-
-.reviews__container {
+  padding-bottom: 86px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 132px;
+  }
 }
 
 .swiper {
@@ -41,12 +45,12 @@
   height: 0.6em;
   position: absolute;
   @media screen and (min-width: $tablet) {
-    top: 33%;
-    left: 16.1%;
+    top: 32%;
+    left: 16.3%;
   }
   @media screen and (min-width: $desktop) {
-    top: 32%;
-    left: 15.1%;
+    top: 35%;
+    left: 17.4%;
   }
   top: 22%;
   left: 34.1%;
@@ -61,16 +65,6 @@
 }
 
 .reviews__window {
-  @media screen and (min-width: $tablet) {
-    width: 620px;
-    height: 382px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 926px;
-    height: 350px;
-  }
-  width: 280px;
-  height: 541px;
   position: relative;
 }
 
@@ -78,8 +72,10 @@
   background-image: url(../images/icon-home.svg);
   background-size: cover;
   border-radius: unset;
-  width: 20px;
-  height: 20px;
+  width: 12.4px;
+  height: 12px;
+  background-position: center;
+  background-color: white;
 }
 
 .reviews__img {
@@ -88,23 +84,60 @@
   margin-bottom: 15px;
 }
 
-.reviews__text {
+.slider__background {
+  background-color: rgba(250, 250, 250, 1);
   padding: 43px 66px 26px 57px;
-  font-size: 12px;
-  line-height: 2.55;
-  font-weight: 500;
-  text-align: center;
-  background: #fafafa;
-
+  margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
     padding: 47px 80px 34px 80px;
-    font-size: 14px;
-    line-height: 2.16;
+    margin-bottom: 8px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 32px 54px 32px 50px;
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 3px;
+  }
+}
+
+.reviews__text {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(250, 250, 250, 0.1),
+    rgba(250, 250, 250, 0.1) 30px,
+    rgba(225, 225, 225, 0.5),
+    rgba(225, 225, 225, 0.5) 31px
+  );
+  width: 157px;
+  display: block;
+  font-size: 12px;
+  line-height: 31px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(250, 250, 250, 0.1),
+      rgba(250, 250, 250, 0.1) 29px,
+      rgba(225, 225, 225, 0.5),
+      rgba(225, 225, 225, 0.5) 30px
+    );
+    width: 460px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(250, 250, 250, 0.1),
+      rgba(250, 250, 250, 0.1) 29px,
+      rgba(225, 225, 225, 0.5),
+      rgba(225, 225, 225, 0.5) 30px
+    );
+    width: 750px;
     font-size: 16px;
-    line-height: 1.86;
+    line-height: 30px;
     letter-spacing: 0.04em;
   }
 }
@@ -138,19 +171,18 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;
-    margin-bottom: 35px;
   }
 
   @media screen and (min-width: $desktop) {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
-    margin-bottom: 35px;
   }
 
-  margin-bottom: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
