@@ -14,7 +14,7 @@
               incididunt ut labore et
             </p>
             <!-- Стрелка вправо -->
-            <button type="button" class="products__button">
+            <button type="button" class="products__button" data-modal-icecream-open>
               <svg class="products__icon" width="12" height=12">
                 <use href="./images/sprite_icons.svg#icon-arrow"></use>
               </svg>
@@ -30,7 +30,7 @@
       incididunt ut labore et
     </p>
     <!-- Стрелка вправо -->
-    <button type="button" class="products__button" >
+    <button type="button" class="products__button" data-modal-icecoffee-open >
       <svg class="products__icon" width="12" height="12">
         <use href="./images/sprite_icons.svg#icon-arrow"></use>
       </svg>
@@ -46,7 +46,7 @@
               incididunt ut labore et
                 </p>
                 <!-- Стрелка вправо -->
-                <button type="button" class="products__button" >
+                <button type="button" class="products__button" data-modal-milkshakes-open>
                 <svg class="products__icon" width="12" height="12">
                 <use href="./images/sprite_icons.svg#icon-arrow"></use>
                 </svg>
@@ -56,4 +56,116 @@
                               </ul>  
                             </div>
                 </section>
+
+<!-- Модальное окно первой карточки-->
+
+                <div class="backdrop is-hidden" data-modal-icecream>
+                  <div class="modal modal-icecream">
+               <button type="button" class="modal__btn-close" data-modal-icecream-close>
+                 <svg class="modal__icon-close" width="18" height="18">
+                   <use href="./images/sprite_icons.svg#close"></use>
+                 </svg>
+               </button>
+               <p class="modal__text"> Клубничное мороженое в вафельном рожке- любимое лакомство
+                наших гостей. Хрустящий сахарний рожок собственного приготовления,
+                 вкуснейшее мороженое, клубника, натуральный клубничный топпинг-что может быть вкуснее! 
+                 Калорийность всего-то 150кКал на 100 гр. 
+              
+               </p>
+                  </div>
+                  </div> 
+
+<!-- Модальное окно второй карточки-->
+               
+                  <div class="backdrop is-hidden" data-modal-icecoffee>
+                    <div class="modal modal-icecoffee">
+                 <button type="button" class="modal__btn-close" data-modal-icecoffee-close>
+                   <svg class="modal__icon-close" width="18" height="18">
+                     <use href="./images/sprite_icons.svg#close"></use>
+                   </svg>
+                 </button>
+               </button>
+               <p class="modal__text">Айс-кофе- ледяной напиток на основе эспрессо
+                который тонизирует и бодрит в жаркий летний день. 
+                Готовится из кофе, молока и льда, с добавлением различных ингредиентов. 
+                У нас Вы сможете попробовать айс-кофе с шоколадом, корицей, ликером, 
+                взбитыми сливками. Калорийность напитка не будет превышать 50кКал на 100 гр
+                
+               </p>
+                  </div>
+                  </div> 
+                  
+<!-- Модальное окно третьей карточки-->
+
+                <div class="backdrop is-hidden" data-modal-milkshakes>
+                  <div class="modal modal-milkshakes">
+               <button type="button" class="modal__btn-close" data-modal-milkshakes-close>
+                 <svg class="modal__icon-close" width="18" height="18">
+                   <use href="./images/sprite_icons.svg#close"></use>
+                 </svg>
+               </button>
+               <p class="modal__text">Оригинальный  молочный коктейль, декорированный шоколадным
+                  печеньем, хрусящими шариками и маршмеллоу, не только приятно удивит вас 
+                  своим орехово-шоколадным вкусом, но и надолго наполнит энергией. 
+                  И это всего 192 кКал на 100 гр волшебного напитка</p>
+                  </div>
+                  </div>
+
+<!-- Скрипт для модального окна первой карточки -->
+                  <script >
+                    (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-icecream-open]"),
+    closeModalBtn: document.querySelector("[data-modal-icecream-close]"),
+    modal: document.querySelector("[data-modal-icecream]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+                  </script>
+<!-- Скрипт для модального окна второй карточки -->
+                  <script >
+                    (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-icecoffee-open]"),
+    closeModalBtn: document.querySelector("[data-modal-icecoffee-close]"),
+    modal: document.querySelector("[data-modal-icecoffee]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+                  </script>
+
+<!-- Скрипт для модального окна третьей карточки -->
+                  <script >
+                    (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-milkshakes-open]"),
+    closeModalBtn: document.querySelector("[data-modal-milkshakes-close]"),
+    modal: document.querySelector("[data-modal-milkshakes]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+                  </script>
+
+
 

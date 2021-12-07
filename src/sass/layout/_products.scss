@@ -334,7 +334,113 @@
           fill:var(--secondary-text-color);
           
         }
+         }
     
-     }
+    // Стили модального окна
     
+    .backdrop {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      top: 0;
+      transition: opacity 250ms linear,
+        visibility 250ms linear;
+    }
     
+    .is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .modal {
+      position: absolute;
+      width: calc(100% - 30px);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 24px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 40px;
+
+      
+      @media screen and (min-width: 480px) {
+        width: 400px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 480px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 530px;
+        
+      }
+    }
+
+    .modal-icecream{
+      background-color: #FFB8CA;
+    }
+    .modal-icecoffee {
+      background-color: #F0D1A5;
+    }
+    .modal-milkshakes{
+      background-color: #C2E297;
+
+    }
+
+    
+    .modal__text  {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+@media screen and (min-width: 1200px) {
+  line-height: 1.15;
+}
+}
+
+    
+    .modal__btn-close {
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      fill: currentColor;
+      transition: color 250ms linear;
+      &:hover,
+      &:focus {
+        
+        background-color:var(--accent-color);
+      }
+    }
+
+    .modal__icon-close {
+      position: absolute;
+      
+      top: 50%;
+      color:var(--accent-color);
+      transform: translateY(-50%);
+      transition: fill 250ms linear;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        fill: #FFFFFF;
+        background-color: var(--title-color);
+      }
+    }
+
+    
+   
