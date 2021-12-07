@@ -70,14 +70,15 @@
       padding: 0 40px;
       margin-bottom: 130px;
       border-radius: 24px;
-      min-height: 485px;
+      height: 485px;
        
   
-      @media screen and(min-width:768px) {
+      @media screen and(min-width:$tablet) {
         margin: 10px;
         padding: 0 11px;
       }
       @media screen and(min-width:$desktop) {
+        height: 525px;
         margin: 15px;
         padding: 0 44px;
       }
@@ -315,7 +316,7 @@
         &:hover,
          &:focus{
             cursor: pointer;
-            background-color:#541f2a;
+            background-color:var(--title-color);
          
     
         }
