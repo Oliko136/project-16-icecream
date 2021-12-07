@@ -14,6 +14,8 @@
   @media screen and (min-width: 1280px) {
     height: 665px;
   }
+
+  overflow: hidden;
 }
 
 //           Header
@@ -362,7 +364,6 @@
   position: absolute;
   left: 36px;
   top: 77px;
-  overflow: hidden;
 
   @media screen and (min-width: 480px) {
     width: 346px;
