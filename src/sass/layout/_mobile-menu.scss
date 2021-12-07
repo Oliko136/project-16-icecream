@@ -6,8 +6,6 @@
   width: 250px;
   height: 100vh;
   padding-top: 60px;
-  // padding-left: 21px;
-  // padding-right: 20px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -39,6 +37,7 @@
   height: 44px;
   cursor: pointer;
   border-radius: 22px;
+  margin-left: 21px;
   border: none;
   font-weight: 700;
   font-size: 16px;
