@@ -3,23 +3,29 @@
 //   }
 
 //   @media screen and (min-width: $desktop) {
-//     background-color: linear-gradient (#fff5f6 15%, transparent 0);
+//     background-image: linear-gradient(180deg, #ffffff 10%, #fff5f6 0);
 //   }
 // }
 
 .contacts {
   padding-bottom: 80px;
-  background-color: var(--secondary-bg-color);
+  // background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(180deg, #ffffff 5.1%, #fff5f6 0);
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     padding-bottom: 158px;
+    background-image: linear-gradient(180deg, #ffffff 9.8%, #fff5f6 0);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 165px;
-    background-image: linear-gradient(180deg, #ffffff 10%, #fff5f6 0);
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    background-image: (), linear-gradient(180deg, #ffffff 12%, #fff5f6 0);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
