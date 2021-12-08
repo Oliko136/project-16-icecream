@@ -14,6 +14,8 @@
   @media screen and (min-width: 1280px) {
     height: 665px;
   }
+
+  overflow: hidden;
 }
 
 //           Header
@@ -73,6 +75,8 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  cursor: pointer;
 }
 
 //          Burger__button
@@ -258,10 +262,12 @@
 
   &:hover,
   &:focus {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--accent-color);
+    fill: var(--secondary-text-color);
   }
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 //     hero__picture--left
@@ -281,6 +287,8 @@
     bottom: -16px;
     left: 77px;
   }
+
+  animation: picture-hero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 //     Hero__picture--right
@@ -302,54 +310,103 @@
   }
 
   z-index: 3;
+
+  animation: picture-hero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes picture-hero {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 //        Hero-picture
 
-.picture__background {
-  position: relative;
-}
+// .picture__background {
+//   position: relative;
+// }
 
-.picture__background::before {
-  content: '';
-  display: block;
-  width: 345px;
-  height: 345px;
+// .picture__background::before {
+//   content: '';
+//   display: block;
+//   width: 345px;
+//   height: 345px;
+//   background-color: var(--subtitle-color);
+//   border-radius: 50%;
+//   position: absolute;
+//   z-index: -2;
+//   left: -81px;
+//   top: -9px;
+
+//   @media screen and (min-width: 768px) {
+//     width: 324px;
+//     height: 322px;
+//     top: -32px;
+//     left: -71px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     width: 538px;
+//     height: 538px;
+//     top: -56px;
+//     left: -119px;
+//   }
+// }
+
+.picture__background {
+  width: 346px;
+  height: 344px;
   background-color: var(--subtitle-color);
   border-radius: 50%;
   position: absolute;
-  z-index: -2;
-  left: -81px;
-  top: -9px;
+  left: 36px;
+  top: 77px;
+
+  @media screen and (min-width: 480px) {
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    top: 77px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
-    top: -32px;
-    left: -71px;
+    top: -6px;
+    left: 307px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
-    top: -56px;
-    left: -119px;
+    top: 15px;
+    left: 475px;
   }
+
+  animation: picture-hero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__picture {
   position: absolute;
-  right: 32px;
+  left: 117px;
   top: 85px;
   z-index: 1;
 
+  @media screen and (min-width: 480px) {
+    left: 117px;
+    top: 85px;
+  }
+
   @media screen and (min-width: 768px) {
-    right: 247px;
+    left: 378px;
     top: 26px;
   }
 
   @media screen and (min-width: 1280px) {
-    right: 450px;
+    left: 594px;
     top: 70px;
   }
 }

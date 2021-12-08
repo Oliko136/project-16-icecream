@@ -199,12 +199,13 @@
   }
 }
 
-.contacts__line {
+.contacts-text-after__title::after {
+  content: '';
+  display: block;
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
   height: 1px;
-
   background-color: #e1e1e1;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -235,7 +236,8 @@
   }
 }
 
-.contacts__time {
+.contacts__time-first,
+.contacts__time-second {
   margin-bottom: 10px;
 
   font-family: var(--primary-font);
@@ -251,6 +253,26 @@
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
+  }
+}
+
+.contacts__time-second::after {
+  content: '';
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
