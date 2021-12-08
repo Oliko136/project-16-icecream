@@ -1,3 +1,12 @@
+// .contacts__container {
+//   @media screen and (min-width: $tablet) and (max-width: 1279px) {
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     background-color: linear-gradient (#fff5f6 15%, transparent 0);
+//   }
+// }
+
 .contacts {
   padding-bottom: 80px;
   background-color: var(--secondary-bg-color);
@@ -8,6 +17,9 @@
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 165px;
+    // background-image: url(/.//src/images/desktop/contacts-bg@1x.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
   }
 }
 
