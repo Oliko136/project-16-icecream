@@ -49,7 +49,7 @@
         </svg>
       </button>
 
-      <button class="header__button cursor" type="button">
+      <button class="header__button cursor" type="button" data-modal-open>
         Buy now<svg class="header--svg" width="10" height="10">
           <use href="./images/sprite_icons.svg#icon-arrow-right"></use>
         </svg>
@@ -151,3 +151,62 @@
     </div>
   </div>
 </section>
+
+<!-- modal -->
+
+<div class="modal-window is-hidden" data-modal>
+  <div class="modal">
+    <form class="form-modal">
+      <p class="modal-text">Leave your details, we will call you back</p>
+      <div class="form-field">
+        <label class="form-label" for="username">Name</label>
+        <span class="input-svg">
+          <input class="form-input" type="text" name="username" id="username" />
+          <svg class="form-svg" width="18" height="18">
+            <use href="./images/sprite_icons.svg#icon-person-blackp"></use>
+          </svg>
+        </span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="phone-number">Telephone</label>
+        <span class="input-svg">
+          <input class="form-input" type="tel" name="phone-number" id="phone-number" />
+          <svg class="form-svg" width="18" height="18">
+            <use href="./images/sprite_icons.svg#icon-phone-blackp"></use>
+          </svg>
+        </span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="email">Mail</label>
+        <span class="input-svg">
+          <input class="form-input" type="email" name="email" id="email" />
+          <svg class="form-svg" width="18" height="18">
+            <use href="./images/sprite_icons.svg#icon-email-black"></use>
+          </svg>
+        </span>
+      </div>
+
+      <label class="modal-textarea">
+        Comment
+        <textarea class="textarea-coment" name="coment" placeholder="Enter text"></textarea>
+      </label>
+
+      <input class="checkbox-input visually-hidden" type="checkbox" id="accept-policy" />
+      <label class="checkbox-label" for="accept-policy"
+        >I agree to the newsletter and accept&nbsp;<a class="checkbox-link" href=""
+          >Terms of an agreement</a
+        ></label
+      >
+
+      <button class="button-modal-form" type="submit">Send</button>
+    </form>
+
+    <button type="button" class="button-modal" data-modal-close>
+      <svg class="button-modal-close" width="30" height="30">
+        <use href="./images/sprite_icons.svg#icon-close-black-18dp-2-1-1"></use>
+      </svg>
+    </button>
+  </div>
+</div>
